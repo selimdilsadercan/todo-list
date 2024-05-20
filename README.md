@@ -4,6 +4,8 @@
 - [x] create .env file, add .env to .gitignore
 - [x] add .prettierrc
 
+- [x] html, body, :root { height: 100% } thing at app/globals.css
+
 - [x] "npm i -D prisma"
 - [x] "npm i @prisma/client"
 - [x] "npx prisma init"
@@ -12,7 +14,7 @@
 - [x] change datasource db provider to sqlite in schema.prisma
 - [x] add DATABASE_URL="file:./dev.db" to .env
 - [x] "npx prisma migrate dev --name init"
-- [x] add dev.db* to .gitignore 
+- [x] add dev.db\*(slash yok) to .gitignore
 - [ ] note: "npx prisma generate" and "npx prisma db push" whenever schemas have changed
 - [ ] note: "npx prisma studio" to manage content
 
@@ -26,4 +28,4 @@
 
 - "npm i prisma --save-dev" ile "npm i -D prisma" aynı şey
 - "npx prisma init --datasource-provider sqlite" sadece prisma/schema.prisma'daki data source'u otomatik sqlite yapmak için
-- prisma migrate ne boka yarıyor
+- prisma migrate ile database kullanmadan localini server hale getirip development için database kullanabilirsin
