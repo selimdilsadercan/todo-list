@@ -2,30 +2,28 @@
 - [x] create github repo, and connect
 - [x] change layout, change page.tsx, delete assets
 - [x] create .env file, add .env to .gitignore
-- [ ] add .prettierrc
-- [ ] "npx shadcn-ui@latest init" to initialize shadcn
-- [ ] html, body, :root { height: 100% } thing at app/globals.css
-- [ ] "npx shadcn-ui@latest add button" to add button
+- [x] add .prettierrc
 
-- [ ] create coachroachdb cluster
-- [ ] press connect -> create new sql user -> copy password -> copy general connection string -> paste to .env as DATABASE_URL
-- [ ] "npm i -D prisma"
-- [ ] "npm i @prisma/client"
-- [ ] "npx prisma init"
-- [ ] create lib/db.ts
-- [ ] add "postinstall": "prisma generate" to package.json's scripts
-- [ ] change datasource db provider to cockroachdb in schema.prisma
+- [x] "npm i -D prisma"
+- [x] "npm i @prisma/client"
+- [x] "npx prisma init"
+- [x] create lib/db.ts
+- [x] add "postinstall": "prisma generate" to package.json's scripts
+- [x] change datasource db provider to sqlite in schema.prisma
+- [x] add DATABASE_URL="file:./dev.db" to .env
+- [x] "npx prisma migrate dev --name init"
+- [x] add dev.db* to .gitignore 
 - [ ] note: "npx prisma generate" and "npx prisma db push" whenever schemas have changed
 - [ ] note: "npx prisma studio" to manage content
-- [ ] create Profile schema to keep users better
-- [ ] create lib/initial-profile.ts and lib/current-profile.ts
 
 ---
 
-- primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, convex, clerk-withorg, liveblocks
-- secondary stack: zustand, date-fns, use-hooks, react-contenteditable, perfect-freehand
-- ui: font = poppins-inter-kalam, icons = lucide
+- primary stack: nextjs13-app-nosrc, react, tailwind, prisma
+- secondary stack:
+- ui: font = inter
 
 ---
 
--
+- "npm i prisma --save-dev" ile "npm i -D prisma" aynı şey
+- "npx prisma init --datasource-provider sqlite" sadece prisma/schema.prisma'daki data source'u otomatik sqlite yapmak için
+- prisma migrate ne boka yarıyor

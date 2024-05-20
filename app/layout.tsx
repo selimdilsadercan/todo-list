@@ -4,7 +4,7 @@ import "./globals.css";
 const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Snake Game",
+  title: "Todo List"
 };
 
 function Layout({ children }: { children: React.ReactNode }) {
