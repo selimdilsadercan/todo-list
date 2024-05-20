@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- [x] "npx create-next-app@latest {project-name}" to initialize nextjs
+- [x] create github repo, and connect
+- [x] change layout, change page.tsx, delete assets
+- [x] create .env file, add .env to .gitignore
+- [ ] add .prettierrc
+- [ ] "npx shadcn-ui@latest init" to initialize shadcn
+- [ ] html, body, :root { height: 100% } thing at app/globals.css
+- [ ] "npx shadcn-ui@latest add button" to add button
 
-## Getting Started
+- [ ] create coachroachdb cluster
+- [ ] press connect -> create new sql user -> copy password -> copy general connection string -> paste to .env as DATABASE_URL
+- [ ] "npm i -D prisma"
+- [ ] "npm i @prisma/client"
+- [ ] "npx prisma init"
+- [ ] create lib/db.ts
+- [ ] add "postinstall": "prisma generate" to package.json's scripts
+- [ ] change datasource db provider to cockroachdb in schema.prisma
+- [ ] note: "npx prisma generate" and "npx prisma db push" whenever schemas have changed
+- [ ] note: "npx prisma studio" to manage content
+- [ ] create Profile schema to keep users better
+- [ ] create lib/initial-profile.ts and lib/current-profile.ts
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- primary stack: nextjs13-app-nosrc, react, shadcn, tailwind, convex, clerk-withorg, liveblocks
+- secondary stack: zustand, date-fns, use-hooks, react-contenteditable, perfect-freehand
+- ui: font = poppins-inter-kalam, icons = lucide
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-
