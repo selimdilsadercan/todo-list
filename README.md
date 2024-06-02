@@ -28,7 +28,7 @@
 
 - "npm i prisma --save-dev" ile "npm i -D prisma" aynı şey
 - "npx prisma init --datasource-provider sqlite" sadece prisma/schema.prisma'daki data source'u otomatik sqlite yapmak için
-- prisma migrate ile database kullanmadan localini server hale getirip development için database kullanabilirsin
+- prisma migrate ile database kullanmadan localini server hale getirip development için database kullanabilirsin, deploy edilmiyor
 - api route'da route oluşturmak yerine server function oluşturabilirsin
 - href ".." geri almayı sağlıyor
 - typeof title != "string" ile type check yapabilirsin
