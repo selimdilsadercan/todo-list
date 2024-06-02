@@ -15,8 +15,8 @@
 - [x] add DATABASE_URL="file:./dev.db" to .env
 - [x] "npx prisma migrate dev --name init"
 - [x] add dev.db\*(slash yok) to .gitignore
-- [ ] note: "npx prisma generate" and "npx prisma db push" whenever schemas have changed
-- [ ] note: "npx prisma studio" to manage content
+- [x] note: "npx prisma generate" and "npx prisma db push" whenever schemas have changed
+- [x] note: "npx prisma studio" to manage content
 
 ---
 
@@ -29,3 +29,6 @@
 - "npm i prisma --save-dev" ile "npm i -D prisma" aynı şey
 - "npx prisma init --datasource-provider sqlite" sadece prisma/schema.prisma'daki data source'u otomatik sqlite yapmak için
 - prisma migrate ile database kullanmadan localini server hale getirip development için database kullanabilirsin
+- api route'da route oluşturmak yerine server function oluşturabilirsin
+- href ".." geri almayı sağlıyor
+- typeof title != "string" ile type check yapabilirsin
